@@ -323,13 +323,9 @@ td, th {
   padding: 0; }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
+*, *::after, *::before {
   box-sizing: inherit; }
 
 button, input[type="button"], input[type="reset"], input[type="submit"], button {
