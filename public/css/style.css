@@ -494,12 +494,6 @@ img, picture {
   margin: 0;
   max-width: 100%; }
 
-/*
-Alpha by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
- */
-/* Basic */
 section#banner {
   max-width: 68em;
   margin-left: auto;
@@ -512,15 +506,15 @@ section#banner {
   section#banner div.video {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 23.2317613015%; }
+    margin-right: 2.1276595745%;
+    width: 23.4042553191%; }
     section#banner div.video:last-child {
       margin-right: 0; }
   section#banner div.cta {
     float: left;
     display: block;
-    margin-right: 2.3576515979%;
-    width: 74.4105871005%; }
+    margin-right: 2.1276595745%;
+    width: 74.4680851064%; }
     section#banner div.cta:last-child {
       margin-right: 0; }
   section#banner h2 {
