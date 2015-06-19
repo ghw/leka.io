@@ -1,0 +1,42 @@
+.footer {
+	$large-screen: em(860) !default;
+	text-align: center;
+	color: grey;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	ul {
+		margin: 0;
+		padding-left: 0;
+
+		@include media($large-screen) {
+			float: center;
+			padding-top: 0.3em;
+		}
+
+		li {
+			line-height: 1.5em;
+			padding-right: .5em;
+			padding-left: .5em;
+			font-size: 1.4em;
+
+			@include media($large-screen) {
+				display: inline;
+				text-align: center;
+			}
+
+			a {
+				color: grey;
+				transition:.5s;
+
+				&:hover {
+					color:$leka-blue;
+				}
+			}
+		}
+	}
+
+	p.copyright {
+		font-size: 0.7em;
+	}
+}
