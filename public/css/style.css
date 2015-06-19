@@ -494,28 +494,225 @@ img, picture {
   margin: 0;
   max-width: 100%; }
 
-section#banner {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  background-attachment: scroll; }
-  section#banner::after {
-    clear: both;
-    content: "";
-    display: table; }
-  section#banner div.video {
-    float: left;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background: none;
+  height: 3.25em;
+  line-height: 3.25em;
+  width: 100%;
+  color: #fff; }
+  header img {
+    position: inherit;
     display: block;
-    margin-right: 2.1276595745%;
-    width: 23.4042553191%; }
-    section#banner div.video:last-child {
-      margin-right: 0; }
-  section#banner div.cta {
-    float: left;
+    height: 2.2em;
+    margin-left: 3em;
+    margin-top: 0.6em;
+    line-height: inherit; }
+  header nav {
+    position: inherit;
+    top: 0;
+    right: 2.2em; }
+    header nav li {
+      display: inline-block;
+      margin-left: 1em; }
+      header nav li a {
+        color: #fff; }
+      header nav li .button {
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        height: 2em;
+        line-height: 1.95em;
+        border-radius: 6px; }
+
+section#landing {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: scroll, fixed;
+  background-image: url('/img/overlay.png'), url('/img/Mathieu.jpg');
+  background-position: top left;
+  background-size: auto, cover;
+  color: #fff;
+  text-align: center;
+  display: table; }
+  section#landing div.banner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 500px;
+    display: table-cell;
+    vertical-align: middle; }
+    section#landing div.banner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    section#landing div.banner img {
+      height: 150px; }
+    section#landing div.banner div.video {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 31.914893617%;
+      margin-left: 17.0212765957%;
+      margin-top: 200px; }
+      section#landing div.banner div.video:last-child {
+        margin-right: 0; }
+      section#landing div.banner div.video a.video-img {
+        background-image: url('/img/overlay.png'), url('/img/Adrien.jpg');
+        background-position: top right;
+        background-size: auto, cover;
+        padding: 70px 100px 70px 100px;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px;
+        border-color: white;
+        transition: .1s; }
+        section#landing div.banner div.video a.video-img i {
+          vertical-align: middle;
+          color: red;
+          opacity: 0.8; }
+        section#landing div.banner div.video a.video-img:hover {
+          border-color: #66bddf;
+          opacity: 0.8; }
+    section#landing div.banner div.cta {
+      float: left;
+      display: block;
+      margin-right: 2.1276595745%;
+      width: 40.4255319149%; }
+      section#landing div.banner div.cta:last-child {
+        margin-right: 0; }
+    section#landing div.banner h2 {
+      font-size: 3.5em; }
+
+.modal label {
+  cursor: pointer;
+  margin-bottom: 0; }
+.modal label img {
+  border-radius: 150px;
+  display: block;
+  max-width: 300px; }
+.modal .modal-state {
+  display: none; }
+.modal .modal-trigger {
+  padding: 0.8em 1em; }
+.modal .modal-fade-screen {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  padding-top: 0.6em;
+  text-align: left;
+  visibility: hidden;
+  z-index: 99999999999; }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-fade-screen {
+      padding-top: 10em; } }
+  .modal .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer; }
+.modal .modal-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer; }
+  .modal .modal-close:after, .modal .modal-close:before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: '';
     display: block;
-    margin-right: 2.1276595745%;
-    width: 74.4680851064%; }
-    section#banner div.cta:last-child {
-      margin-right: 0; }
-  section#banner h2 {
-    font-size: 3.5em; }
+    margin: -3px 0 0 -1px; }
+  .modal .modal-close:hover:after, .modal .modal-close:hover:before {
+    background: #c4c4c4; }
+  .modal .modal-close:before {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+.modal .modal-inner {
+  -webkit-transition: opacity 0.25s ease;
+  -moz-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 0;
+  margin: auto;
+  max-height: 95%;
+  overflow: auto;
+  position: relative;
+  width: 95%; }
+  @media screen and (min-width: 40em) {
+    .modal .modal-inner {
+      max-height: 70%;
+      width: 60%; } }
+  @media screen and (min-width: 53.75em) {
+    .modal .modal-inner {
+      width: 50%; } }
+  .modal .modal-inner h1 {
+    color: #333;
+    margin-bottom: 0 0 0.6em 0;
+    text-align: left;
+    text-transform: capitalize; }
+  .modal .modal-inner p {
+    color: #333;
+    line-height: 1.5; }
+  .modal .modal-inner .modal-intro {
+    font-weight: 800; }
+  .modal .modal-inner .modal-content {
+    color: #333; }
+    @media screen and (min-width: 40em) {
+      .modal .modal-inner .modal-content {
+        -webkit-columns: 2 8em;
+        -moz-columns: 2 8em;
+        columns: 2 8em; } }
+  .modal .modal-inner a.cta {
+    color: white;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em; }
+    .modal .modal-inner a.cta:last-child {
+      padding: 0 2em; }
+.modal .modal-state:checked + .modal-fade-screen {
+  opacity: 1;
+  visibility: visible; }
+.modal .modal-state:checked + .modal-fade-screen .modal-inner {
+  top: 0.5em; }
+
+.modal-open {
+  overflow: hidden; }
