@@ -1,0 +1,164 @@
+/* régles spécifiques page2-OUR MISSION- par div/id */
+
+#page2{
+    clear: both;
+    padding-top: 55%;
+}
+#logoPage2{
+    padding:5%;
+    float: left;
+}
+#texte1{
+    float:right;
+    text-align: center;
+    padding-right: 5%; 
+    padding-top: 8%;
+}
+#photoL{
+    overflow:hidden;
+    width: 100%;
+    height: 30%;
+}
+#photo{
+    float: left;
+    width: 45%;
+    height: 15%;
+}
+#texte2{
+    background-color: darkblue;
+    color: white;
+    float: right;
+    width: 45%;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 2%;
+    
+}
+
+/* régles spécifiques page3-DISCOVER MOTI- par div/id */
+
+#page3{
+    clear: both;
+    padding-top: 3%;
+}
+#blocs{
+    color: white;
+    padding: 10px;
+    float: left;
+}
+#interaction{
+    background-color: #66BDDF;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+#autonomy{
+    background-color:  limegreen;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+#therapistTool{
+    background-color: #F7A018;
+    width: 15%;
+    text-align: center;
+    float: left;
+}
+#moti{
+    padding-top: 5%;
+}
+#textePage3Title{
+    float: right;
+    color: deeppink;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+#textePage3{
+    float: right;
+    text-align: center;
+    padding-right: 5%;
+    width: 60%;
+}
+#cloud{
+    clear: both;
+    text-align: right;
+    padding-right: 10%;
+    padding-top: 3%;
+}
+
+/* régles spécifiques page4-RESEARCH- par div/id */
+
+#page4{
+    clear: both;
+    text-align: center;
+    padding-top: 5%;
+}
+#research1{
+    font-size: 24px;
+    padding: 3%;
+}
+#research2{
+    font-size: 18px;
+    padding: 3%;
+}
+#research3{
+    font-size: 14*6px;
+    padding: 3%;
+}
+#research4{
+    font-size: 24px;
+    padding: 3%;
+}
+
+<!-- Liste des articles de presse -->
+<!--
+#seenIn ul {
+    padding:0;
+    margin:0;
+    float: left;
+}
+#seenIn li {
+    margin-left:2px;
+    float: left;
+    list-style: none;
+    font-weight: bold;
+}
+#seenIn ul li a {
+    display:inline;
+    width:100px;
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    padding:5px;
+    font-weight: bold;
+}
+#seenIn ul li a:hover {
+    color: 66BDDF;
+} 
+-->
+
+
+/* régles spécifiques page5-TEAM- par div/id */
+
+#page5{
+    clear: both;
+    padding-top: 5%;
+}
+#comments{
+    text-align: center;
+    padding: 3%;
+}
+
+
+/* régles spécifiques page6-CONTACT- par div/id */
+
+#page6{
+    clear: both;
+    padding-top: 5%;
+}
+#footer{
+    padding-top: 5%;
+    text-align: center;
+}
