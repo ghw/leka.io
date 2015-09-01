@@ -1,28 +1,93 @@
-//colors
-$color_navy_blue_approx: darkblue;
-$white: white;
-$color_viking_approx: #66bddf;
-$green: lime;
-$color_tree_poppy_approx: #f7a018;
-$color_persian_rose_approx: deeppink;
-$black: black;
+.center{
+    text-align: center;
+}
+.blue{
+    color:$leka-blue;
+}
+.pink{
+    color:$leka-pink;
+}
+.green{
+    color:$leka-green;
+}
+.bio_text{
+    width: 60%;
+    float: right;
+}
+.bio_pic{
+    float:left;
+}
+.bio_text_Level2{
+    width: 40%;
+    height: 20%;
+    float: right;
+}
+.col1{
+    height: 40%;
+    padding-bottom: 30%;
+}
+.col2{
+    height: 40%;
+}
+.columnLevel2{
+    float: left;
+    width: 30%;
+    padding-left: $littleSpace;
+}
 
-#page2 {
+
+
+/*Section First */
+#HomePage {
+	background-image: $url_0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#YTLink {
+	float: left;
+	width: 560px;
+	height: 315px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 15px;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+#logo1 {
+	float: right;
+	margin: 10%;
+}
+#pres1 {
+	float: right;
+	text-align: center;
+	padding-right: $littleSpace;
+	width: 45%;
+}
+
+/*Section Our Mission */    
+#OurMission {
 	clear: both;
 	padding-top: 55%;
 }
 #logoPage2 {
-	padding: 5%;
+	padding: $littleSpace;
 	float: left;
 }
 #texte1 {
 	float: right;
 	text-align: center;
-	padding-right: 5%;
+    vertical-align: center;
+	padding-right: 12%;
 	padding-top: 8%;
+    font-size: 25px;
 }
-#photoL {
-	overflow: hidden;
+/*#photoL {
+	//overflow: hidden;
 	width: 100%;
 	height: 30%;
 }
@@ -39,81 +104,92 @@ $black: black;
 	text-align: center;
 	font-size: 18px;
 	padding-right: 2%;
-}
-#page3 {
+}*/
+/*Section Discover Moti */
+#DiscoverMoti {
 	clear: both;
 	padding-top: 3%;
 }
-/*
-#blocs {
-	color: $white;
-	padding: 10px;
-	float: left;
+#robot{
+    margin-left: $littleSpace;
+    float: left;
 }
-#interaction {
-	background-color: $color_viking_approx;
-	width: 15%;
+#accroche{
+    font-size: $big-font-size;
+    text-align: center;
+    color: $leka-orange;
+    float: right;
+    padding-bottom: $littleSpace;
+    padding-top: $littleSpace;
+    padding-right: $littleSpace;
+}
+#args{
+    text-align: center;
+    float: right; 
+    font-weight: bold;
+    font-size: $not-so-big-font-size;
+    padding-right: $moreSpace;
+}
+
+#otherArgs{
+    text-align: center;
+    float: right;
+    font-size: $not-so-big-font-size;
+    padding-top: $littleSpace;
+    padding-bottom: $littleSpace;
+    padding-right: $moreSpace;
+}
+#manyArgs{
+    font-size: $not-so-big-font-size;
+    padding-top: $littleSpace;
+    text-align: center;
+}
+#blocks{
+    padding-left: $littleSpace;
+}
+/* Section Research */
+#testimony {
+    float: right;
 	text-align: center;
-	float: left;
+	padding: $littleSpace;
 }
-#autonomy {
-	background-color: $greengreen;
-	width: 15%;
-	text-align: center;
-	float: left;
+#picTestimony{
+    float: left;
+    padding-left: $littleSpace;
 }
-#therapistTool {
-	background-color: $color_tree_poppy_approx;
-	width: 15%;
-	text-align: center;
-	float: left;
+#research1{
+    padding: $littleSpace;
+    font-size: $not-so-big-font-size;
+    text-align: center;
 }
-#moti {
-	padding-top: 5%;
+#picTestimony2{
+    float: left;
+    padding-left: $littleSpace;
 }
-#textePage3Title {
-	float: right;
-	color: $color_persian_rose_approx;
-	font-size: 25px;
-	text-align: center;
-	padding-top: 5%;
-	padding-right: 5%;
+#research2{
+    padding: $littleSpace;
+    font-size: $not-so-big-font-size;
+    text-align: center;
 }
-#textePage3 {
-	float: right;
-	text-align: center;
-	padding-right: 5%;
-	width: 60%;
+#research3{
+    padding: $littleSpace;
+    font-size: $not-so-big-font-size;
+    text-align: center;
 }
-#cloud {
-	clear: both;
-	text-align: right;
-	padding-right: 10%;
-	padding-top: 3%;
+#bubble1{
+    float: left;
+    padding: $bubbleSpaces;
 }
-*/
-#page4 {
-	clear: both;
-	text-align: center;
-	padding-top: 5%;
+#bubble2{
+    float: left;
+    padding: $bubbleSpaces;
 }
-#research1 {
-	font-size: 24px;
-	padding: 3%;
+#bubble3{
+    float: right;
+    padding: $bubbleSpaces;
 }
-#research2 {
-	font-size: 18px;
-	padding: 3%;
-}
-#research3 {
-	font-size: 14*6px;
-	padding: 3%;
-}
-#research4 {
-	font-size: 24px;
-	padding: 3%;
-}
-#seenIn {
+
+/*#seenIn {
 	li {
 		margin-left: 2px;
 		float: left;
@@ -132,20 +208,44 @@ $black: black;
 			color: 66BDDF;
 		}
 	}
-}
-#comments {
-	text-align: center;
-	padding: 3%;
-}
-#page6 {
+}*/
+
+/*Section Team */
+#Team {
 	clear: both;
-	padding-top: 5%;
+	padding-top: $littleSpace;
+}
+#Level1{
+    position: relative;
+    width: 90%;
+    height: 20%;   
+    padding: 0 $moreSpace $moreSpace $moreSpace;
+}
+#Level1_1{
+    float: left;
+    width: 40%;
+    height: 15%;
+}
+#Level1_2{
+    float: right;
+    width: 40%;
+    height: 15%;
+}
+#Level2{
+    position: relative;
+    width: 100%;
+    height: 30%;   
+    padding: 0 $moreSpace 0 $moreSpace;
+}
+
+
+/*Section Contact */
+#Contact {
+	clear: both;
+	padding-top: $littleSpace;
 }
 #footer {
-	padding-top: 5%;
+	padding-top: $littleSpace;
 	text-align: center;
 }
- #page5 {
-	clear: both;
-	padding-top: 5%;
-}
+
