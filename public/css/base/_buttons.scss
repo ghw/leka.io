@@ -5,7 +5,7 @@ button {
   background-color: $action-color;
   border-radius: $base-border-radius;
   border: none;
-  color: #fff;
+  color: black;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -21,11 +21,76 @@ button {
   &:hover,
   &:focus {
     background-color: darken($action-color, 15%);
-    color: #fff;
+    color: black;
   }
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
   }
+}
+
+/* règles du bouton Adopt A Leka */
+.MotiBtn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: $base-font-family;
+  color: #ffffff;
+  font-size: 20px;
+  height: 60px;
+  width: 180px; 
+  text-align: center;   
+  background: $leka-blue;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+   
+  &:hover,
+  &:focus {
+    background: $leka-pink;
+  }
+
+}
+
+/* règles du bouton Join us */
+.JoinUsBtn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: $base-font-family;
+  color: #ffffff;
+  font-size: 18px;
+  height: 60px;
+  width: 250px; 
+  text-align: center;   
+  background: $leka-blue;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+   
+  &:hover,
+  &:focus {
+    background: $leka-pink;
+  }
+
+}
+
+/* positionnement bouton dans la homepage */
+#LekaHPBtn{
+    margin: 2% 20%;
+    float: right;
+}
+
+/* positionnement bouton "be the first to know" */
+#LekaBtnContact{
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    margin-bottom: 1%;
+}
+/* positionnement bouton Join Us */
+#LekaBtnJoinUs{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-bottom: 1%;
 }
