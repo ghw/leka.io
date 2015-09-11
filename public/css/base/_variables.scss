@@ -1,11 +1,13 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: 'Khula', sans-serif;
 $heading-font-family: $base-font-family;
+
 
 // Font Sizes
 $base-font-size: 1em;
 $big-font-size: 30px;
 $not-so-big-font-size: 24px;
+$oops-was-too-big-size: 20px;
 
 //background
 $url_0: url(/img/fond_kid.png);
@@ -24,7 +26,7 @@ $nav-bar-height: 3.25em;
 //margin or padding
 $littleSpace: 5%;
 $moreSpace: 15%;
-$bubbleSpaces: 12%;
+$bubbleSpaces: 6%;
 
 // Colors
 $blue: #477dca;
